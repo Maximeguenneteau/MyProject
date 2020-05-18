@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-private List<String> values;
+private List<Pokemon> values;
 
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -26,7 +26,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 }
 
-    public void add(int position, String item) {
+    public void add(int position, Pokemon item) {
         values.add(position, item);
         notifyItemInserted(position);
     }
@@ -37,7 +37,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
 
-    public MyAdapter(List<String> myDataset) {
+    public MyAdapter(List<Pokemon> myDataset) {
         values = myDataset;
     }
 
@@ -60,16 +60,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
-        final String name = values.get(position);
-        holder.txtHeader.setText(name);
-        holder.txtHeader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                remove(position);
-            }
-        });
-
-        holder.txtFooter.setText("Footer: " + name);
+        final Pokemon currentPokemon = values.get(position);
+        holder.txtHeader.setText(currentPokemon.getName());
+        holder.txtFooter.setText(currentPokemon.getUrl());
     }
 
     @Override
