@@ -1,4 +1,4 @@
-package com.maxime.android.myproject;
+package com.maxime.android.myproject.model;
 
 public class Pokemon {
     private String name;

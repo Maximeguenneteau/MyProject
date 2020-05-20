@@ -1,4 +1,4 @@
-package com.maxime.android.myproject;
+package com.maxime.android.myproject.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,9 +12,12 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import com.maxime.android.myproject.R;
+import com.maxime.android.myproject.data.Api;
+import com.maxime.android.myproject.model.Pokemon;
+import com.maxime.android.myproject.model.ResponseRest;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -110,11 +113,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showError() {
-                    Toast.makeText(this,"Api Error", Toast.LENGTH_SHORT).show();
-                }
+        Toast.makeText(this,"Api Error", Toast.LENGTH_SHORT).show();
+    }
 
 
-        }
+}
+
 
 
 

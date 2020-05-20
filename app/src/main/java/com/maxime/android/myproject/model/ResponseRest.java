@@ -1,4 +1,6 @@
-package com.maxime.android.myproject;
+package com.maxime.android.myproject.model;
+
+import com.maxime.android.myproject.model.Pokemon;
 
 import java.util.List;
 

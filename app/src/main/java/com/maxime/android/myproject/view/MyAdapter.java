@@ -1,4 +1,4 @@
-package com.maxime.android.myproject;
+package com.maxime.android.myproject.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +7,13 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.maxime.android.myproject.R;
+import com.maxime.android.myproject.model.Pokemon;
+
 import java.util.List;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-private List<Pokemon> values;
+    private List<Pokemon> values;
 
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -58,8 +62,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, final int position) {
-
+    public void onBindViewHolder(ViewHolder  holder, final int position) {
         final Pokemon currentPokemon = values.get(position);
         holder.txtHeader.setText(currentPokemon.getName());
         holder.txtFooter.setText(currentPokemon.getUrl());
@@ -69,5 +72,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public int getItemCount() {
         return values.size();
     }
+
 
 }
