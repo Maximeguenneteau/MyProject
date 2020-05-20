@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void navigateToDetails(Pokemon pokemon) {
         Intent myIntent = new Intent(MainActivity.this, MainActivity2.class );
+        myIntent.putExtra("PokemonKey", Singleton.getGson().toJson(pokemon));
         MainActivity.this.startActivity(myIntent);
     }
 }
