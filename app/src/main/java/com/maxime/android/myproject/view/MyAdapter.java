@@ -12,8 +12,14 @@ import com.maxime.android.myproject.model.Pokemon;
 
 import java.util.List;
 
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-    private List<Pokemon> values;
+    private  List<Pokemon> values;
+    private  OnItemClickListener listener;
+
+    public interface OnItemClickListener {
+        void onItemClick(Pokemon item);
+    }
 
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -41,8 +47,10 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
 
-    public MyAdapter(List<Pokemon> myDataset) {
-        values = myDataset;
+    public MyAdapter(List<Pokemon> myDataset, OnItemClickListener listener) {
+        this.values = myDataset;
+        this.listener = listener;
+
     }
 
 
@@ -66,7 +74,14 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         final Pokemon currentPokemon = values.get(position);
         holder.txtHeader.setText(currentPokemon.getName());
         holder.txtFooter.setText(currentPokemon.getUrl());
-    }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onItemClick(currentPokemon);
+            }
+        });
+        }
 
     @Override
     public int getItemCount() {
@@ -74,4 +89,4 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
 
-}
+    }

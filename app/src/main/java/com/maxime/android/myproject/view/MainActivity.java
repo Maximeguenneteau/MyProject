@@ -4,29 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import com.maxime.android.myproject.R;
 import com.maxime.android.myproject.Singleton;
 import com.maxime.android.myproject.controler.MainController;
-import com.maxime.android.myproject.data.Api;
 import com.maxime.android.myproject.model.Pokemon;
-import com.maxime.android.myproject.model.ResponseRest;
 
-import java.lang.reflect.Type;
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -52,7 +39,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new MyAdapter(pokemonList);
+        mAdapter = new MyAdapter(pokemonList, new MyAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Pokemon item) {
+                controller.onItemClick(item);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -61,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void navigateToDetails(Pokemon pokemon) {
+        Intent myIntent = new Intent(MainActivity.this, MainActivity2.class );
+        MainActivity.this.startActivity(myIntent);
+    }
 }
 
 
