@@ -2,6 +2,10 @@ package com.maxime.android.myproject.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +38,7 @@ public class MainBisActivity extends AppCompatActivity {
         );
         controller.onStart();
     }
+
     public void showList(List<Pokemon> pokemonList) {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -52,11 +57,31 @@ public class MainBisActivity extends AppCompatActivity {
         Toast.makeText(this,"Api Error", Toast.LENGTH_SHORT).show();
     }
 
-
     public void navigateToDetails(Pokemon pokemon) {
         Intent myIntent = new Intent(MainBisActivity.this, MainActivity2.class );
         myIntent.putExtra("PokemonKey", Singleton.getGson().toJson(pokemon));
         MainBisActivity.this.startActivity(myIntent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.research, menu);
+        MenuItem searchItem = menu.findItem(R.id.action_bar);
+        SearchView searchView = (SearchView) searchItem.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                mAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+        return true;
     }
 }
 
