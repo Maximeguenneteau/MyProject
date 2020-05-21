@@ -1,10 +1,10 @@
 # Pokémon Application Projet
 
-Application mobile affichant des pokémons et des abilités depuis une Api que j'héberge directement sur mon Github.
+Cette Application affiche des pokémons et des abilités avec l'aide d'une recyclerView depuis une Api que j'héberge directement sur mon Github.
 
-## Getting Started
+## Prérequis
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Nécessite d'avoir Android Studio.
 
 ### Prerequisites
 
