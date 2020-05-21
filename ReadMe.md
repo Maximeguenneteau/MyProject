@@ -40,6 +40,9 @@ Cette Application affiche des pokémons et des abilités avec l'aide d'une recyc
 ### Ecran Abilité
    *Meme chose que l'écran Pokemon
    
+![Capture4](https://user-images.githubusercontent.com/65347801/82599867-48b9b900-9bad-11ea-8423-afaf49cb1940.PNG)
+![Capture5](https://user-images.githubusercontent.com/65347801/82599873-4a837c80-9bad-11ea-8d20-9487e10e6938.PNG)
+   
 
 
   
