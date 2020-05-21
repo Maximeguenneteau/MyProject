@@ -14,9 +14,9 @@ Cette Application affiche des pokémons et des abilités avec l'aide d'une recyc
 * Utilisation d'une RecyclerView pour l'affichage d'une liste
 * Affichage du détail d'un pokémon ou d'une abilité
 * Fonction supplémentaires :
--3 activités différentes
--Changement d'activité ergonomique
--Barre de recherche
+* 3 activités différentes
+* Changement d'activité ergonomique
+* Barre de recherche
 
 ### Fonctionnalités
 ## Premier écran
