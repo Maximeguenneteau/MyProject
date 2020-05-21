@@ -7,10 +7,10 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface Api {
-    @GET("/api/v2/pokemon")
+    @GET("Maximeguenneteau/MyProject/master/pokemon.json")
     Call<ResponseRest> getPokemonResponse();
 
 
-    @GET("/api/v2/ability")
+    @GET("Maximeguenneteau/MyProject/master/ability.json")
     Call<ResponseRest2> getAbilityResponse();
 }

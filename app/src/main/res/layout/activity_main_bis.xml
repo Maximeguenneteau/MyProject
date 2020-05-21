@@ -45,11 +45,10 @@
         android:layout_width="226dp"
         android:layout_height="128dp"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="93dp"
-        android:layout_marginBottom="46dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pokemon_logo" />
@@ -59,28 +58,15 @@
         android:layout_width="244dp"
         android:layout_height="185dp"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="66dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/noctali" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="226dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

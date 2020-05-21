@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class Singleton {
-    public static final String BASE_URL = "https://pokeapi.co/";
+    public static final String BASE_URL2 = "https://raw.githubusercontent.com/";
     private static Gson gsonInstance;
     private static Api apiInstance;
     private static SharedPreferences sharedPreferencesInstance;
@@ -29,7 +29,7 @@ public class Singleton {
     public static Api getApi(){
         if(apiInstance == null){
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
+                    .baseUrl(BASE_URL2)
                     .addConverterFactory(GsonConverterFactory.create(getGson()))
                     .build();
 

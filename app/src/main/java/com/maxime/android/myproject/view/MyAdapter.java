@@ -70,7 +70,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         super(v);
         layout = v;
         txtHeader = (TextView) v.findViewById(R.id.firstLine);
-        txtFooter = (TextView) v.findViewById(R.id.secondLine);
     }
 }
 
@@ -111,8 +110,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public void onBindViewHolder(ViewHolder  holder, final int position) {
         final Pokemon currentPokemon = PokemonList.get(position);
         holder.txtHeader.setText(currentPokemon.getName());
-        holder.txtFooter.setText(currentPokemon.getUrl());
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

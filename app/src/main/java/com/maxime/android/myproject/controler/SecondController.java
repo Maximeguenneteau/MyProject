@@ -16,7 +16,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class SecondController {
-    public static final String BASE_URL = "https://pokeapi.co/";
+    public static final String BASE_URL2 = "https://raw.githubusercontent.com/";
     private SharedPreferences sharedPreferences;
     private Gson gson;
     private MainBisActivity2 view;

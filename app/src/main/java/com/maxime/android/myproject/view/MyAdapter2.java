@@ -67,7 +67,6 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder> {
             super(v);
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
-            txtFooter = (TextView) v.findViewById(R.id.secondLine);
         }
     }
 
@@ -110,7 +109,6 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder> {
     public void onBindViewHolder(ViewHolder  holder, final int position) {
         final Ability currentAbility = AbilityList.get(position);
         holder.txtHeader.setText(currentAbility.getName());
-        holder.txtFooter.setText(currentAbility.getUrl());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

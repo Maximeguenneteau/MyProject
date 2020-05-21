@@ -19,27 +19,19 @@
         android:contentDescription="TODO"
         app:srcCompat="@drawable/ability_icon" />
 
-    <TextView
-        android:id="@+id/secondLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/icon"
-        android:text="Description"
-        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/firstLine"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/secondLine"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="339dp"
+        android:layout_height="53dp"
         android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:textStyle="bold"
         android:layout_toRightOf="@id/icon"
         android:gravity="center_vertical"
         android:text="Example application"
-        android:textSize="16sp" />
+        android:textSize="20dp" />
 
 </RelativeLayout>

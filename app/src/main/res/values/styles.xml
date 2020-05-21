@@ -11,5 +11,10 @@
     <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
     <item name="colorPrimary">@color/colorPrimary2</item>
     </style>
-
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary2</item>
+    </style>
 </resources>
