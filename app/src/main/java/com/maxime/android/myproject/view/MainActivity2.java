@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.maxime.android.myproject.R;
-import com.maxime.android.myproject.Singleton;
+import com.maxime.android.myproject.controler.Singleton;
 import com.maxime.android.myproject.model.Pokemon;
 
 public class MainActivity2 extends AppCompatActivity {

@@ -5,10 +5,9 @@ import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.maxime.android.myproject.Singleton;
 import com.maxime.android.myproject.model.Pokemon;
 import com.maxime.android.myproject.model.ResponseRest;
-import com.maxime.android.myproject.view.MainActivity;
+import com.maxime.android.myproject.view.MainBisActivity;
 
 import java.lang.reflect.Type;
 import java.util.List;
@@ -21,11 +20,11 @@ public class MainController {
     public static final String BASE_URL = "https://pokeapi.co/";
     private SharedPreferences sharedPreferences;
     private Gson gson;
-    private MainActivity view;
+    private MainBisActivity view;
 
 
-    public MainController(MainActivity mainActivity,Gson gson, SharedPreferences sharedPreferences) {
-        this.view=mainActivity;
+    public MainController(MainBisActivity mainBisActivity, Gson gson, SharedPreferences sharedPreferences) {
+        this.view= mainBisActivity;
         this.gson=gson;
         this.sharedPreferences=sharedPreferences;
     }

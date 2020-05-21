@@ -1,4 +1,4 @@
-package com.maxime.android.myproject;
+package com.maxime.android.myproject.controler;
 
 import android.content.Context;
 import android.content.SharedPreferences;

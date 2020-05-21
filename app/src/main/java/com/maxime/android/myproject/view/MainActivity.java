@@ -1,65 +1,46 @@
 package com.maxime.android.myproject.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.maxime.android.myproject.R;
-import com.maxime.android.myproject.Singleton;
-import com.maxime.android.myproject.controler.MainController;
-import com.maxime.android.myproject.model.Pokemon;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private MyAdapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-    private MainController controller;
 
+    private Button button;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        controller = new MainController(
-                this,
-                Singleton.getGson(),
-                Singleton.getSharedPreferencesInstance(getApplicationContext())
-        );
-        controller.onStart();
-    }
-    public void showList(List<Pokemon> pokemonList) {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new MyAdapter(pokemonList, new MyAdapter.OnItemClickListener() {
+        setContentView(R.layout.activity_main_bis);
+        button = (Button) findViewById(R.id.button);
+        button2 = (Button) findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(Pokemon item) {
-                controller.onItemClick(item);
+            public void onClick(View v) {
+                openActivity();
             }
         });
-        recyclerView.setAdapter(mAdapter);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
     }
 
-    public void showError() {
-        Toast.makeText(this,"Api Error", Toast.LENGTH_SHORT).show();
+    private void openActivity() {
+        Intent intent = new Intent(this, MainBisActivity.class);
+        startActivity(intent);
     }
 
-
-    public void navigateToDetails(Pokemon pokemon) {
-        Intent myIntent = new Intent(MainActivity.this, MainActivity2.class );
-        myIntent.putExtra("PokemonKey", Singleton.getGson().toJson(pokemon));
-        MainActivity.this.startActivity(myIntent);
+    private void openActivity2() {
+        Intent intent = new Intent(this, MainBisActivity2.class);
+        startActivity(intent);
     }
 }
-
-
-
-
