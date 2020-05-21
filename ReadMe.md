@@ -18,8 +18,8 @@ Cette Application affiche des pokémons et des abilités avec l'aide d'une recyc
 * Changement d'activité ergonomique
 * Barre de recherche
 
-### Fonctionnalités
-## Premier écran
+## Fonctionnalités
+### Premier écran
   *écran d'acceuil
 
 ## Running the tests
