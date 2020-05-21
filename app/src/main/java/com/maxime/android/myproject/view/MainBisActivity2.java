@@ -59,7 +59,7 @@ public class MainBisActivity2 extends AppCompatActivity {
 
 
     public void navigateToDetails(Ability ability) {
-        Intent myIntent = new Intent(this, MainActivity2.class );
+        Intent myIntent = new Intent (MainBisActivity2.this, MainActivity3.class );
         myIntent.putExtra("AbilityKey", Singleton.getGson().toJson(ability));
         MainBisActivity2.this.startActivity(myIntent);
     }
