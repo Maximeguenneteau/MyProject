@@ -26,6 +26,10 @@ Cette Application affiche des pokémons et des abilités avec l'aide d'une recyc
 ### Deuxième écran
   *écran pokemon
   
+![Capture2](https://user-images.githubusercontent.com/65347801/82599538-ccbf7100-9bac-11ea-8711-f604374c8cd7.PNG)
+### Troisème écran
+  *Detail de la liste
+  
 
 
 ## Running the tests
