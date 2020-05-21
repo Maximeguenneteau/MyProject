@@ -21,6 +21,7 @@ Cette Application affiche des pokémons et des abilités avec l'aide d'une recyc
 ## Fonctionnalités
 ### Premier écran
   *écran d'acceuil
+  ![Capture1](https://user-images.githubusercontent.com/65347801/82599352-65a1bc80-9bac-11ea-9ea0-ce49a40edb7f.PNG)
 
 ## Running the tests
 
