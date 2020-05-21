@@ -6,31 +6,21 @@ Cette Application affiche des pokémons et des abilités avec l'aide d'une recyc
 
 * Nécessite d'avoir Android Studio.
 
-### Prerequisites
+### Consignes respectées
 
-What things you need to install the software and how to install them
+* Architecture soigné et suivant le principe MVP
+* Principe Solide
+* Appels REST avec retrofit
+* Utilisation d'une RecyclerView pour l'affichage d'une liste
+* Affichage du détail d'un pokémon ou d'une abilité
+* Fonction supplémentaires :
+    -3 activités différentes
+    -Changement d'activité ergonomique
+    -Barre de recherche
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+### Fonctionnalités
+## Premier écran
+  *écran d'acceuil
 
 ## Running the tests
 
