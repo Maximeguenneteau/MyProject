@@ -27,11 +27,11 @@
       },
       {
          "name":"Limber",
-         "url":"This Pokémon cannot be paralyzed.\n\nIf a Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle."
+         "url":"This Pokémon cannot be paralyzed. If a Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle."
       },
       {
          "name":"Sand-veil",
-         "url":""During a sandstorm, this Pokémon has 1.25× its evasion, and it does not take sandstorm damage regardless of type."
+         "url":"During a sandstorm, this Pokémon has 1.25× its evasion, and it does not take sandstorm damage regardless of type."
       },
       {
          "name":"Static",
