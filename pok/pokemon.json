@@ -1,0 +1,207 @@
+{   
+    {
+      "name": "Bulbasaur",
+      "url": "Plante-Poison"
+    },
+    {
+      "name": "Ivysaur",
+      "url": "Plante-Poison"
+    },
+    {
+      "name": "Venusaur",
+      "url": "Plante-Poison"
+    },
+    {
+      "name": "Charmander",
+      "url": "Feu"
+    },
+    {
+      "name": "Charmeleon",
+      "url": "Feu"
+    },
+    {
+      "name": "Charizard",
+      "url": "Feu"
+    },
+    {
+      "name": "Squirtle",
+      "url": "Eau"
+    },
+    {
+      "name": "Wartortle",
+      "url": "Eau"
+    },
+    {
+      "name": "Blastoise",
+      "url": "Eau"
+    },
+    {
+      "name": "Caterpie",
+      "url": "Insecte"
+    },
+    {
+      "name": "Metapod",
+      "url": "Insecte"
+    },
+    {
+      "name": "Butterfree",
+      "url": "Insecte-Vol"
+    },
+    {
+      "name": "Weedle",
+      "url": "Insecte-Poison"
+    },
+    {
+      "name": "Kakuna",
+      "url": "Insecte-Poison"
+    },
+    {
+      "name": "Beedrill",
+      "url": "Insectes-Poison"
+    },
+    {
+      "name": "Pidgey",
+      "url": "Normal-Vol"
+    },
+    {
+      "name": "Pidgeotto",
+      "url": "Normal-Vol"
+    },
+    {
+      "name": "Pidgeot",
+      "url": "Normal-Vol"
+    },
+    {
+      "name": "Rattata",
+      "url": "Normal"
+    },
+    {
+      "name": "Raticate",
+      "url": "Normal"
+    },
+    {
+      "name": "Spearow",
+      "url": "Normal-Vol"
+    },
+    {
+      "name": "Fearow",
+      "url": "Normal-Vol"
+    },
+    {
+      "name": "Ekans",
+      "url": "Poison"
+    },
+    {
+      "name": "Arbok",
+      "url": "Poison"
+    },
+    {
+      "name": "Pikachu",
+      "url": "Electrik"
+    },
+    {
+      "name": "Raichu",
+      "url": "Electrik"
+    },
+    {
+      "name": "Sandshrew",
+      "url": "Sol"
+    },
+    {
+      "name": "Sandslash",
+      "url": "Sol"
+    },
+    {
+      "name": "Nidoran-f",
+      "url": "Poison"
+    },
+    {
+      "name": "Nidorina",
+      "url": "Poison"
+    },
+    {
+      "name": "Nidoqueen",
+      "url": "Sol-Poison"
+    },
+    {
+      "name": "Nidoran-m",
+      "url": "Poison"
+    },
+    {
+      "name": "Nidorino",
+      "url": "Poison"
+    },
+    {
+      "name": "Nidoking",
+      "url": "Sol-Poison"
+    },
+    {
+      "name": "Clefairy",
+      "url": "Fee"
+    },
+    {
+      "name": "Clefable",
+      "url": "Fee"
+    },
+    {
+      "name": "Vulpix",
+      "url": "Feu"
+    },
+    {
+      "name": "Ninetales",
+      "url": "Feu"
+    },
+    {
+      "name": "Jigglypuff",
+      "url": "Normal-Fee"
+    },
+    {
+      "name": "Wigglytuff",
+      "url": "Normal-Fee"
+    },
+    {
+      "name": "Zubat",
+      "url": "Poison-Vol"
+    },
+    {
+      "name": "Golbat",
+      "url": "Poison-Vol"
+    },
+    {
+      "name": "Oddish",
+      "url": "Plante-Poison"
+    },
+    {
+      "name": "Gloom",
+      "url": "Plante-Poison"
+    },
+    {
+      "name": "Vileplume",
+      "url": "Plante-Poison"
+    },
+    {
+      "name": "Paras",
+      "url": "Plante-Insecte"
+    },
+    {
+      "name": "Parasect",
+      "url": "Plante-Insecte"
+    },
+    {
+      "name": "Venonat",
+      "url": "Insecte-Poison"
+    },
+    {
+      "name": "Venomoth",
+      "url": "Insecte-Poison"
+    },
+    {
+      "name": "Diglett",
+      "url": "Sol"
+    },
+    {
+      "name": "Dugtrio",
+      "url": "Sol"
+    }
+  ]
+}
